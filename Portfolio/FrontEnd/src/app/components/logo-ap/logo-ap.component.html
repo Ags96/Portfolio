@@ -9,7 +9,8 @@
             <a href=""><img src="../../../assets/facebook.png" id="facebook"></a>
             <a href=""><img src="../../../assets/linkedin.png" id="linkedin"></a>
             <a href=""><img src="../../../assets/twitter.png" id="twitter"></a>
-            <button type="button" class="btn btn-outline-light btn-lg">Login</button>
+            <button type="button" class="btn btn-outline-light btn-lg" (click)="login()" *ngIf="!isLogged">Iniciar sesión</button>
+            <button type="button" class="btn btn-outline-light btn-lg" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
         </div>
     </div>
 </div>
