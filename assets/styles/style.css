@@ -1,0 +1,227 @@
+/* --- RESETS --- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --dark-blue: #1f1d2c;
+  --light-blue: #242635;
+  --semi-white: #e5e5e5;
+  --white: #ffffff;
+  --gold: #f1a600;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100vw;
+  background-color: var(--dark-blue);
+  color: var(--semi-white);
+}
+h1, h2, h3, h4, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+input {
+  outline: 0;
+  font-family: inherit;
+  border: 0;
+}
+button {
+  border: 0;
+  font-family: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/*--- STYLES ---*/
+/* NAV BAR --------------------------------------- */
+.nav__bar {
+  background-color: var(--light-blue);
+  height: 4.5em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 1s;
+  margin-bottom: 2em;
+}
+.nav__bar.animation {
+    opacity: 1;
+  }
+.nav__items__container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 1s;
+  padding-left: 0;
+}
+.nav__items__container.animation {
+  opacity: 1;
+}
+.li__nav__item {
+  position: relative;
+  cursor: pointer;
+}
+.li__nav__item:hover {
+  color: #3498db;
+}
+.li__nav__item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #3498db;
+  transition: width 0.3s ease-in-out;
+}
+.li__nav__item:hover::after {
+  width: 100%;
+}
+/* NAV BUTTON */
+.bars__menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/**------------------- MEDIA QUERYS MENU---------------------------**/
+@media (max-width: 900.98px) {
+
+  .nav__items__container {
+    transform: translateX(100%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-radius: 0.5em;
+    height: calc(100% - 60px);
+    overflow-y: hidden;
+    right: 0;
+    bottom: 0;
+    gap: 5em;
+    background-color: var(--light-blue);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.090);
+    height: 90%;
+    transition: all 1s ease;
+    z-index: 2;
+  }
+  .toggle-menu.animation {
+    opacity: 1;
+  }
+  
+  .toggle-menu {
+    transform: translateX(0);
+  }
+  .bars__menu {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    right: 2em;
+    top: 1em;
+  }
+ 
+}
+/** ------- STYLES: <main> <header> -------- **/
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.header__container {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.profile__name {
+  text-align: center;
+  color: var(--semi-white);
+  font-size: 3.5rem;
+  user-select: none;
+}
+.profile__info {
+  text-align: center;
+  user-select: none;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(52, 152, 219, 1),
+               -2px -2px 4px rgba(52, 152, 219, 1);
+}
+.profile__description-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.profile__description {
+  padding-top: 0.5em;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  user-select: none;
+  position: relative;
+  padding: 0.5em 5em 0 5em;
+}
+.profile__img-container {
+
+}
+.profile-img {
+  max-height: 30em;
+  max-width: 30em;
+  border-radius: 0.5em;
+  transition: transform 300ms ease;
+  object-fit: contain;
+  z-index: 1;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+/** --------- MEDIA QUERYS MAIN / HEADER  --------- **/
+@media (max-width: 768px) {
+  .main__container {
+    flex-wrap: wrap;
+  }
+  .header__container {
+    width: 100%;
+  }
+  .profile__img-container {
+  
+  }
+  .profile-img {
+    max-height: 25em;
+    max-width: 25em;
+    
+  }
+}
