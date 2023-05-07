@@ -227,3 +227,17 @@ img {
   
   }
 }
+.header__icons-container{
+  display:flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.header__icon {
+  width: 3em;
+  height: 3em;
+}
+.header__icon:hover{
+  filter: opacity(.5);
+}

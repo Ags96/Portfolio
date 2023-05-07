@@ -7,6 +7,7 @@ setTimeout(function() {
     document.querySelector('.nav__items__container').classList.add('animation');
  }, 1500)
 
+
 // toggle nav menu 
 document.querySelector('.bars__menu').addEventListener('click', animateBars);
 
