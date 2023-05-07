@@ -195,12 +195,12 @@ img {
   padding: 0.5em 5em 0 5em;
 }
 .profile__img-container {
-
+  margin-right: 5em;
 }
 .profile-img {
-  max-height: 30em;
-  max-width: 30em;
-  border-radius: 0.5em;
+  max-height: 40em;
+  max-width: 40em;
+  border-radius: 1em;
   transition: transform 300ms ease;
   object-fit: contain;
   z-index: 1;
@@ -217,11 +217,13 @@ img {
     width: 100%;
   }
   .profile__img-container {
-  
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .profile-img {
     max-height: 25em;
     max-width: 25em;
-    
+  
   }
 }
