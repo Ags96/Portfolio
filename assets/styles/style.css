@@ -30,6 +30,10 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 input {
   outline: 0;
   font-family: inherit;
@@ -332,6 +336,8 @@ img {
   padding-bottom: 1em;
   letter-spacing: 6px;
   color: var(--white);
+  text-shadow: 1px 1px 4px rgba(52, 152, 219, 1),
+               -1px -1px 4px rgba(52, 152, 219, 1);
 }
 .skills__section-container {
   display: flex;
@@ -374,5 +380,14 @@ img {
 .skills__description {
   text-align: center;
 }
+/**-----Section Projects styles -------*/
 
+
+/**----- CARDS ------- */
+.container__card {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #c8102e;
+  margin-top: 100px;
+}
 
