@@ -9,7 +9,7 @@ html {
 }
 :root {
   --dark-blue: #1f1d2c;
-  --light-blue: #242635;
+  --light-blue: #27233f;
   --semi-white: #e5e5e5;
   --white: #ffffff;
   --gold: #f1a600;
@@ -18,7 +18,7 @@ body, html {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  width: 100vw;
+  max-width: 100vw;
   background-color: var(--dark-blue);
   color: var(--semi-white);
 }
@@ -46,7 +46,7 @@ img {
 /*--- STYLES ---*/
 /* NAV BAR --------------------------------------- */
 .nav__bar {
-  background-color: var(--light-blue);
+  background-color: #242635;
   height: 4.5em;
   width: 100%;
   display: flex;
@@ -178,7 +178,7 @@ img {
 .profile__name {
   text-align: center;
   color: var(--semi-white);
-  font-size: 2.7rem;                    /*!    checkear medida que no genere scroll */
+  font-size: 2.8rem;
   user-select: none;
   letter-spacing: 2px;
   margin-bottom: 0.1em;
@@ -318,20 +318,61 @@ img {
   }
 }
 /** --------- Section About Styles --------- **/
-.about__section-container {
- height: 400px;
+.skills__section {
   margin-top: 10em;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
 }
-.about__section-tittle {
+.skills__section-tittle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
+  margin-top: 0.5em;
+  padding-bottom: 1em;
+  letter-spacing: 6px;
+  color: var(--white);
 }
-.about__description-container {
- 
+.skills__section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 3em;
 }
-.about__description {
-
+.skills__container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: #211e36;
+ border: 2px solid #191729;
+ border-radius: 1em;
+ min-height: 180px;
+ min-width: 120px;
+ user-select: none;
+ transition: transform 300ms ease;
+}
+.skills__container:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.skills__description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.skill__icon-container {
+  max-width: 5em;
+}
+.skill-icon {
+  border-radius: 0.8em;
+  object-fit: contain;
+}
+.skills__description {
+  text-align: center;
 }
 
 
