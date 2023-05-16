@@ -44,7 +44,7 @@ const toggleLanguage = () => {
       profileParagraph.innerHTML = `<span class="first-word">Hi!</span> I'm 26 years old. I'm a Frontend developer. Currently, I'm a FullStack student in training. I'm constantly seeking improvement, learning, and gaining experience every day.`
      }
   
-    isMoved = !isMoved;
+     isMoved = !isMoved;
 }
 
 switchLang.addEventListener('click', () => {

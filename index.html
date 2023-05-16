@@ -23,7 +23,7 @@
             <ul class="nav__items__container">
                 <li class="li__nav__item"><a>Home</a></li>
                 <li class="li__nav__item"><a href="#skills">Skills</a></li>
-                <li class="li__nav__item"><a>Projects</a></li>
+                <li class="li__nav__item"><a href="#projects">Projects</a></li>
                 <li class="li__nav__item"><a>Certifications</a></li>
                 <li class="li__nav__item"><a>Contact</a></li>
             </ul>
@@ -54,8 +54,10 @@
             </div>
         </header>
     </main>
-    <section class="skills__section">
-        <h2 class="skills__section-tittle" id="skills">Skills</h2>
+    <section class="skills__section" id="skills">
+        <div class="skills__title-container">
+            <h2 class="skills__section-tittle">Skills</h2>
+        </div>
         <div class="skills__section-container">
             <div class="skills__container">
                 <div class="skills__description-container">
@@ -116,13 +118,37 @@
         </div>
         </div>
     </section>
-    <section class="section__projects">
-        <h2>Projects</h2>
+    <section class="section__projects" id="projects">
+        <div class="title__projects-container">
+            <h2 class="projects__title">Projects</h2>
+        </div>
         <!-- CARDS -->
         <div class="container__card">
             <div class="card__father">
                 <div class="card">
-                    <div class="card__front">
+                    <div class="card__front"
+                        style="background-image: url(./assets/utils/img/projectImgs/e-commerce.png);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h3>E-commerce</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./assets/utils/img/projectImgs/pokedex.png);">
+                        <div class="bg"></div>
                         <div class="body__card_front">
                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
                         </div>
@@ -130,12 +156,97 @@
                     <div class="card__back">
                         <div class="body__card_back">
                             <h3>Pokedex</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque provident explicabo vel velit nostrum fuga!</p>
-                            <input type="button" value="Leer más">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front"
+                        style="background-image: url(./assets/utils/img/projectImgs/rick&morty.png);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h3>Rick & Morty</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front"
+                        style="background-image: url(./assets/utils/img/projectImgs/weatherApp.png);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h3>Weather App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./assets/utils/img/projectImgs/CRUD.png);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h3>CRUD</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card__father">
+                <div class="card">
+                    <div class="card__front" style="background-image: url(./assets/utils/img/projectImgs/space.jpg);">
+                        <div class="bg"></div>
+                        <div class="body__card_front">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, exercitationem?</h3>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                        <div class="body__card_back">
+                            <h3>Space Info</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi reprehenderit aliquam
+                                nobis minima dolor, tempore qui at adipisci totam repellendus dolores harum dolore atque
+                                provident explicabo vel velit nostrum fuga!</p>
+                            <input type="button" value="Ver proyecto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
