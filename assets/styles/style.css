@@ -501,3 +501,73 @@ img {
 .body__card_back input:hover {
   box-shadow: 1px 1px 30px 0px #449de6;
 }
+/** Section Certifications ---------- **/
+.certifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  background-color: var(--light-blue);
+}
+.title__certifications-container {
+  position: relative;
+  background: #191724;
+  width: 24em;
+  height: 4em;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5em;
+}
+.certifications__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: var(--white);
+  text-shadow: 1px 1px 4px rgba(52, 152, 219, 1),
+               -1px -1px 4px rgba(52, 152, 219, 1);
+}
+.certifications__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+  margin-top: 2em;
+}
+.certification {
+  max-width: 35em;
+  position: relative;
+  padding: 1em;
+}
+.certification__img {
+  border-radius: 1em;
+  transition: transform 600ms ease;
+}
+.certification__img:hover{
+  transform: scale(1.1);
+}
+.certification__btn {
+  position: absolute;
+  left: 1.8em;
+  padding: 0.8em 1.5em;
+  background: #58B0F6;
+  color: var(--white);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 1px 1px 25px -5px #58B0F6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+.certification__btn:hover {
+  box-shadow: 1px 1px 30px 0px #449de6;
+}

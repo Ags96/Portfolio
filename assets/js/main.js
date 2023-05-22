@@ -36,12 +36,12 @@ const toggleLanguage = () => {
       switchLang.style.transform = 'translateX(200%)';
       switchLang.classList.remove('circle__es');
       switchLang.classList.add('circle__en');
-      profileParagraph.innerHTML = '<span class="first-word">Hola!</span> tengo 26 años. Soy desarrollador Frontend. estudiante FullStack en formación, busco mejorar constantemente, aprender y adquirir experiencia cada día.'
+      profileParagraph.innerHTML = '<span class="first-word">Hola!</span> tengo 26 años. Soy desarrollador FullStack. Orientado al Frontend, busco nuevos desafíos, mejorar constantemente, aprender y adquirir experiencia cada día.'
     } else {
       switchLang.style.transform = 'translateX(0)';
       switchLang.classList.remove('circle__en');
       switchLang.classList.add('circle__es');
-      profileParagraph.innerHTML = `<span class="first-word">Hi!</span> I'm 26 years old. I'm a Frontend developer. Currently, I'm a FullStack student in training. I'm constantly seeking improvement, learning, and gaining experience every day.`
+      profileParagraph.innerHTML = `<span class="first-word">Hi!</span> I'm 26 years old. I'm a FullStack developer. Focused on the Frontend, I am seeking new challenges, constantly improving, learning, and gaining experience every day.`
      }
   
      isMoved = !isMoved;
