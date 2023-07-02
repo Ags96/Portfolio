@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
         <header class="header__container">
             <div class="profile__left-container">
                 <h1 class="profile__name">Agustín Seoane</h1>
-                <h2 class="profile__info">Front-End Developer jr</h2>
+                <h2 class="profile__info">FullStack Developer jr</h2>
                 <div class="profile__description-container">
                     <p class="profile__description"><span class="first-word">Hi!</span> I'm 26 years old. I'm a
                         FullStack developer. Focused on the Frontend, I am seeking new challenges, constantly improving,
@@ -84,6 +84,38 @@
                         <img class="skill-icon" src="./assets/utils/img/js.png" alt="">
                     </div>
                     <p class="skills__description">JavaScript</p>
+                </div>
+            </div>
+            <div class="skills__container">
+                <div class="skills__description-container">
+                    <div class="skill__icon-container">
+                        <img class="skill-icon" src="./assets/utils/img/nodejs.png" alt="">
+                    </div>
+                    <p class="skills__description">NodeJS</p>
+                </div>
+            </div>
+            <div class="skills__container">
+                <div class="skills__description-container">
+                    <div class="skill__icon-container">
+                        <img class="skill-icon" src="./assets/utils/img/Postgresql_elephant.svg.png" alt="">
+                    </div>
+                    <p class="skills__description">PostgreSQL</p>
+                </div>
+            </div>
+            <div class="skills__container">
+                <div class="skills__description-container">
+                    <div class="skill__icon-container">
+                        <img class="skill-icon" src="./assets/utils/img/sequelize-logo.png" alt="">
+                    </div>
+                    <p class="skills__description">Sequelize</p>
+                </div>
+            </div>
+            <div class="skills__container">
+                <div class="skills__description-container">
+                    <div class="skill__icon-container">
+                        <img class="skill-icon" src="./assets/utils/img/express-1.png" alt="">
+                    </div>
+                    <p class="skills__description">Express</p>
                 </div>
             </div>
             <div class="skills__container">
@@ -207,11 +239,12 @@
                     <div class="card__back">
                         <div class="body__card_back">
                             <h3>CRUD</h3>
-                            <p style="padding-bottom: 1.5em;">Aplicación que simula la creación, lectura, actualización
+                            <p>Aplicación FullStack que simula la creación, lectura, actualización
                                 y
-                                eliminación de usuarios.
-                                Desarrollado en React, utilizando react-hook-forms, react-toastify, Axios y custom hooks
+                                eliminación (CRUD) de usuarios.
+                                Front desarrollado en React, utilizando react-hook-forms, react-toastify, Axios y custom hooks
                                 para las peticiones.
+                                Backend desplegado en Render, desarrollado con nodeJS, express, sequelize y postgreSQL.
                             </p>
                             <a href="https://react-crud-agx.netlify.app/" target="_blank"
                                 rel="noopener noreferrer"><input type="button" value="View project"></a>
@@ -279,9 +312,22 @@
         </div>
     </section>
     <footer class="footer__container">
+            <h2 class="contact_tittle">Contáctame</h2>
+        <div class="form__container">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgebjygq" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="email-address">Your Email</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="tuEmail@domain.com" required="">
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder=" Escribe aquí tu mensaje! " required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/a911cf15a5.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
